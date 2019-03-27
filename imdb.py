@@ -4,8 +4,10 @@ def parse_movie(m_content):
     m_header = m_content.find('h3', class_ = 'lister-item-header')
     if m_header.find('a'):
         m['title'] = m_header.find('a').get_text()
+        print(m['title'])
     if m_header.find('span', class_ = 'lister-item-year'):
         m['year'] = m_header.find('span', class_ = 'lister-item-year').get_text()
+        m['year'] = m['year'].replace('(I)','').replace('(II)','').replace('(III)','').strip()
         m['year'] = int(m['year'][1:5])
 
     m_muted = m_content.find('p', class_ = 'text-muted')
