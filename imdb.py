@@ -19,7 +19,9 @@ def parse_movie(m_content):
 
     m_visible = m_content.find('p', class_ = 'sort-num_votes-visible')
     m_visible_children = m_visible.findChildren()
-    m['votes'] = int(m_visible_children[1]['data-value'])
-    m['gross'] = int(m_visible_children[4]['data-value'].replace(',',''))
+    if len(m_visible_children)>=2:
+        m['votes'] = int(m_visible_children[1]['data-value'])
+        if len(m_visible_children)>=5:
+            m['gross'] = int(m_visible_children[4]['data-value'].replace(',',''))
 
     return m
