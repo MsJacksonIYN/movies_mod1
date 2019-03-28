@@ -19,6 +19,7 @@ def parse_movie(m_content):
     m_header = m_content.find('h3', class_ = 'lister-item-header')
     if m_header.find('a'):
         m['title'] = m_header.find('a').get_text()
+        m['id'] = m_header.find('a')['href'].split('/')[2]
     if m_header.find('span', class_ = 'lister-item-year'):
         m['year'] = m_header.find('span', class_ = 'lister-item-year').get_text()
         if m['year']:
@@ -56,31 +57,34 @@ import time
 all_2018_movies = []
 for i in list(range(1,10000,50)):
     m_content = get_m_content(2018, i)
-    time.sleep(5)
+    time.sleep(3)
     
     for movie in m_content:
         all_2018_movies.append(parse_movie(movie))
         
 all_2018_movies
-print(len(all_2018_movies))
+
+import time
 
 all_2019_movies = []
 for i in list(range(1,6600,50)):
     m_content = get_m_content(2019, i)
-    time.sleep(10)
+    time.sleep(3)
     
     for movie in m_content:
         all_2019_movies.append(parse_movie(movie))
         
 all_2019_movies
+
+print(len(all_2018_movies))
 print(len(all_2019_movies))
 
 import pandas as pd
 
 df_2018 = pd.DataFrame(all_2018_movies)
 df_2018.to_csv('imdb_2018.csv')
-df_2018.head()
+df_2018.describe()
 
 df_2019 = pd.DataFrame(all_2019_movies)
 df_2019.to_csv('imdb_2019.csv')
-df_2019.head()
+df_2019.describe()
