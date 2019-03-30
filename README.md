@@ -12,15 +12,9 @@
 - Use git as a collaborative tool for this project to manage version control and history. 
 
 ## Methodology 
-- **Scraping**: Gather and analyze data for all feature films released in 2018 or 2019
-  ○ Recent data will give us the pulse of current audience/consumer demand
-  ○ Movie data scraped from IMDB
-- **Pinging**: Gather and analyze more detailed data for top rated movies, based on IMDB rating
-  ○ Using IMDB rating allows us to include less popular and/or global movies with smaller # of votes on IMDB
-  ○ Detailed data pulled from The Movie Database API
-- **Querying and Exploring**: Chart relationships that can guide Lionsgate business decisions.
-  ○ Cleaned and stored data tables in SQL database
-  ○ Recommendations assume a successful movie is one that is liked (highly rated/scored) by consumers
+- **Scraping**: Gather and analyze data for all feature films released in 2018 or 2019 . ○ Recent data will give us the pulse of current audience/consumer demand . ○ Movie data scraped from IMDB
+- **Pinging**: Gather and analyze more detailed data for top rated movies, based on IMDB rating . ○ Using IMDB rating allows us to include less popular and/or global movies with smaller # of votes on IMDB . ○ Detailed data pulled from The Movie Database API
+- **Querying and Exploring**: Chart relationships that can guide Lionsgate business decisions . ○ Cleaned and stored data tables in SQL database . ○ Recommendations assume a successful movie is one that is liked (highly rated/scored) by consumers
   
 ## Insights
 For movies released in 2018-2019:
