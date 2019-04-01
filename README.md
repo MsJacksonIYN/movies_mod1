@@ -29,5 +29,11 @@ tend to not have highest viewership
 - PG-13 movies are popular AND high scoring
 - The top 10 highest scoring movies were released on weekdays (Tues-Friday) with the most being released on Friday.  Most were PG-13, and most were in the adventure genre.
 - Big budget blockbusters are risky: they don't always result in the highest payoff in terms of profit or in terms of score.
+
+![costbenefit](Plots/Cost_Benefit.png)
+
 - The most popular films do not necessarily have the broadest viewer base nor require the largest budgets.<br/>
- *(score = IMDb rating * number of votes)  
+ *(score = IMDb rating * number of votes) 
+ 
+![heatmap](Plots/Heatmap.png)
+
