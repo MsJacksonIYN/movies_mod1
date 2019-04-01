@@ -24,16 +24,20 @@
   
 ## Insights
 For movies released in 2018-2019:
-- Highest scoring* genres (adventure, scifi, action) tend to be the most voted on genres.  Genres with the highest IMDB rating
-tend to not have highest viewership
-- PG-13 movies are popular AND high scoring
-- The top 10 highest scoring movies were released on weekdays (Tues-Friday) with the most being released on Friday.  Most were PG-13, and most were in the adventure genre.
-- Big budget blockbusters are risky: they don't always result in the highest payoff in terms of profit or in terms of score.
+### Highest scoring* genres (adventure, scifi, action) tend to be the most voted on genres.  Genres with the highest IMDB rating tend to not have highest viewership
 
-![costbenefit](Plots/Cost_Benefit.png)
+![genre](Plots/genre_plots.png)
+### PG-13 movies are popular AND high scoring
 
-- The most popular films do not necessarily have the broadest viewer base nor require the largest budgets.<br/>
+![certificate](Plots/certificate_plots.png)
+### The top 10 highest scoring movies were released on weekdays (Tues-Friday) with the most being released on Friday.  Most were PG-13, and most were in the adventure genre.
+
+![top10](Plots/top10_plots.png)
+### Big budget blockbusters are risky: they don't always result in the highest payoff in terms of profit or in terms of score. The most popular films do not necessarily have the broadest viewer base nor require the largest budgets.
+
+![summary](Plots/summary_plots.png)
+
  *(score = IMDb rating * number of votes) 
  
-![heatmap](Plots/Heatmap.png)
+
 
